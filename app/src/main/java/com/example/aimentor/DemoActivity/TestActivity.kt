@@ -52,4 +52,17 @@ class TestActivity : AppCompatActivity() {
         // TestActivity se an di de TestSecondActivity xuat hien
         Log.d(TAG_LOG, "onStop da khoi chay")
     }
+
+    override fun onRestart() {
+        super.onRestart()
+        // ham nay se goi khi Activity da tung bi an di duoc kich hoat tro lai
+        // khi ham nay chay se keo theo onStart va onResume chay lai
+        Log.d(TAG_LOG, "onRestart da khoi chay")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // ham nay se duoc goi khi huy ung dung
+        Log.d(TAG_LOG, "onDestroy - App da bi huy")
+    }
 }

@@ -14,7 +14,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".DemoActivity.TestSecondActivity"/>
         <activity
-            android:name=".DemoActivity.TestActivity"
+            android:name=".DemoActivity.DemoIntentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
