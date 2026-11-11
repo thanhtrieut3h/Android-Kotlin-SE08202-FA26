@@ -1,15 +1,14 @@
-package com.example.aimentor.DemoEvent
+package com.example.aimentor
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aimentor.MainActivity
-import com.example.aimentor.R
 
-class DemoLoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_linear_layout_login) // view giao dien
@@ -17,6 +16,13 @@ class DemoLoginActivity : AppCompatActivity() {
         val edtPassword = findViewById<EditText>(R.id.edtPassword)
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
         val btnCancel = findViewById<Button>(R.id.btnCancel)
+        val tvRegister = findViewById<TextView>(R.id.tvRegister)
+
+        tvRegister.setOnClickListener {
+            // chuyen sang man hinh dang ky tai khoan
+            val intentRegister = Intent(this, RegisterActivity::class.java)
+            startActivity(intentRegister)
+        }
 
         btnSubmit.setOnClickListener {
             // bat su kien click vao button

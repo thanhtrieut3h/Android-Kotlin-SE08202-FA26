@@ -78,8 +78,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="Account Register"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvRegister"/>
 </LinearLayout>
